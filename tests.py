@@ -23,6 +23,11 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertFalse(check_pwd(input), expected)
 
+    def test5_pwd_contains_uppercase_letter(self):
+        input = '123456789a'
+        expected = False
+        self.assertFalse(check_pwd(input), expected)
+
 
 if __name__ == '__main__':
     unittest.main()
