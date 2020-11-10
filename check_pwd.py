@@ -2,7 +2,7 @@ import string
 
 
 def check_pwd(pwd):
-    symbols = '~`!@#$%^&()_+-='
+    symbols = '~`!@#$%^&*()_+-='
     # check for length greater than or equal 8, less than or eq to 20
     pwd_length = len(pwd)
     pwd_status = True
