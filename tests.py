@@ -33,6 +33,12 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertFalse(check_pwd(input), expected)
 
+    def test7_pwd_contains_symbols(self):
+        symbols = '~`!@#$%^&()_+-='
+        input = 'AAAAAAAAaaaa1123'
+        expected = False
+        self.assertFalse(check_pwd(input), expected)
+
 
 if __name__ == '__main__':
     unittest.main()
