@@ -13,6 +13,11 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertFalse(check_pwd(input), expected)
 
+    def test3_string_length_greater_than_20(self):
+        input = '1234567890123456789012345'
+        expected = False
+        self.assertFalse(check_pwd(input), expected)
+
 if __name__ == '__main__':
     unittest.main()
 
