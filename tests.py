@@ -28,6 +28,11 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertFalse(check_pwd(input), expected)
 
+    def test6_pwd_contains_digits_letter(self):
+        input = 'AAAAAAAAaaaa'
+        expected = False
+        self.assertFalse(check_pwd(input), expected)
+
 
 if __name__ == '__main__':
     unittest.main()
