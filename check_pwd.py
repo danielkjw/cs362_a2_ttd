@@ -9,11 +9,18 @@ def check_pwd(pwd):
         pwd_status = True
     else:
         return False
+
     if any(char.islower() for char in pwd):
         pwd_status = True
     else:
         return False
+
     if any(char.isupper() for char in pwd):
+        pwd_status = True
+    else:
+        return False
+
+    if any(char.isdigit() for char in pwd):
         pwd_status = True
     else:
         return False
