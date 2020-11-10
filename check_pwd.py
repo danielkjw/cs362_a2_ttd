@@ -1,3 +1,5 @@
 
 def check_pwd(pwd):
-    return True
+    # test should return non boolean
+    pwd_status = 1
+    return pwd_status
