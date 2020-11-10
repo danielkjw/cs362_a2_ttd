@@ -8,6 +8,10 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertFalse(check_pwd(input), expected)
 
+    def test2_string_length_less_8(self):
+        input = '123456'
+        expected = False
+        self.assertFalse(check_pwd(input), expected)
 
 if __name__ == '__main__':
     unittest.main()
